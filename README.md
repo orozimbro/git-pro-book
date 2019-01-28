@@ -27,3 +27,4 @@ $ git difftool --tool-help
 $ git difftool --tool=winmerge  
 ```
 
+outro teste':
