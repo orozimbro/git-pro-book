@@ -6,14 +6,16 @@ The 'git config' can be stored in three diferent places:
 - ~/.gitconfig or ~/.config/git/config file: specific to your user, if you pass the option '--global' to 'git config', it reads and writes from this file;
 - config file in the git repository (that is .git/config on each project), specific to that single repository;
 Each level overrides values in the previos  level;
-
 ### Setting your identity
 $ git config --global user.name "Mauricio Orozimbro de Souza"
 $ git config --global user.email "orozimbro@gmail.com"
-
 ### Checking your settings
 $ git config --list
 
+## git status
+$ git status
+### Git short status
+$ git status -s
 
 ## git diff
 $ git diff
