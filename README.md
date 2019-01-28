@@ -7,8 +7,10 @@ The 'git config' can be stored in three diferent places:
 - config file in the git repository (that is .git/config on each project), specific to that single repository;
 Each level overrides values in the previos  level;
 ### Setting your identity
+`
 $ git config --global user.name "Mauricio Orozimbro de Souza"
 $ git config --global user.email "orozimbro@gmail.com"
+`
 ### Checking your settings
 $ git config --list
 
