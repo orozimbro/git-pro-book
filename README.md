@@ -74,4 +74,45 @@ $ git log --pretty=format:"%h - %an, %ar : %s" # see below options
 author: who originally wrote the work  
 committer: who last applied the work  
 
+## git rm
+`$ git rm <file>`: remove file from stage and working directory  
+`$ git rm --cached <file>`: remove file only from stage area, useful if you forgot to add something to yout .gitgnore  
+`$ git rm log/\*.log`: you can pass files, directories and file-glob patterns to `git rm`  
+
+## git mv
+This command rename files on git, if you only rename the file on your filesystem, git will see a DELETE (old name) and ADD (new file) of files. With this command de file is renamed and staged.  
+`$ git mv rm-file.txt remove-file.txt`
+
+# git log
+```
+$ git log			# list all log from the last until the first
+$ git log -p -2			# -p: show difference, -2: only the last two commits
+$ git log --since=2.weeks	# --since=2.weeks: commits made in the last two weeks
+$ git log -S<funcion_name>	# -S: list commits that changed a specific function/word
+$ git log --stat		# --stat: some abbreviated stats for each commit
+$ git log --graph		# --graph: show ASCII graph of your branch history 
+$ git log --pretty=oneline	# --pretty=oneline: show each commit on only one line, others ptions: short, full, fuller
+$ git log --pretty=format:"%h - %an, %ar : %s" # see below options 
+```
+| Option	| Description of Output		|
+|---------------|-------------------------------|
+| %H		| commit hash			|
+| %h		| abbreviated commit hash	|
+| %T		| tree hash			|
+| %t		| abbreviated  tree hash	|
+| %P		| parent hashes			|
+| %p		| abbreviated parent hashes	|
+| %an		| author name			|
+| %ae		| author email			|
+| %ad		| author date			|
+| %ar		| author date, relative		|
+| %cn		| committer name		|
+| %ce		| committer email		|
+| %cd		| committer date		|
+| %cr		| committer date,  relative	|
+| %s		| subject			|
+
+author: who originally wrote the work  
+committer: who last applied the work  
+
 
