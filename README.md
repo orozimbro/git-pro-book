@@ -1,5 +1,16 @@
 # GIT PRO 
 
+## intro
+
+```
+untracked	unmodified	modified	staged
+   |----------------|---------------|----------->>>|	add the file
+   |                |------------>>>|              |	edit the file
+   |                |               |----------->>>|	stage the file
+   |<<<-------------|               |              |	remove the file
+   |                |<<<------------|--------------|	commit
+```
+
 ## git config
 The 'git config' can be stored in three diferent places:
 - /etc/gitconfig file; contains values for every user on the system, if you pass the option '--system' to 'git config', it reads and writes from this file;
@@ -72,4 +83,10 @@ $ git log --pretty=format:"%h - %an, %ar : %s" # see below options
 | %s		| subject			|
 
 author: who originally wrote the work  
-committer: who last applied the work  
+committer: who last applied the work
+
+## git reset
+`$ git reset HEAD <file>`: remove a file from staging area  
+
+## git checkout
+`$ git checkout -- <file>`: revert file changes in working directory
