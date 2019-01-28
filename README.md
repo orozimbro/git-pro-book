@@ -92,8 +92,10 @@ committer: who last applied the work
 `$ git checkout -- <file>`: revert file changes in working directory (keep in mind, it is a dangerous command)
 
 ## git tag
+There are two main types of tags: lightweight and annotated
 `$ git tag`  
-`$ git tag -l 'v1.8.5*'`
+`$ git tag -l 'v1.8.5*'`  
+`$ git tag -a v1.0 -m 'my version 1.0'`: '-a' is an annotated tag, -m is the message to tag
 
 
 # --------------------- Working with remotes -------------------------
