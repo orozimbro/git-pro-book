@@ -91,6 +91,11 @@ committer: who last applied the work
 ## git checkout 
 `$ git checkout -- <file>`: revert file changes in working directory (keep in mind, it is a dangerous command)
 
+## git tag
+`$ git tag`  
+`$ git tag -l 'v1.8.5*'`
+
+
 # --------------------- Working with remotes -------------------------
 
 ## git remote
