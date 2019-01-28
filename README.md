@@ -88,12 +88,23 @@ committer: who last applied the work
 ## git reset
 `$ git reset HEAD <file>`: remove a file from staging area  
 
-## git checkout (keep in mind, it is a dangerous command)
-`$ git checkout -- <file>`: revert file changes in working directory
+## git checkout 
+`$ git checkout -- <file>`: revert file changes in working directory (keep in mind, it is a dangerous command)
 
 # --------------------- Working with remotes -------------------------
 
 ## git remote
 `$ git remote`: list de name of each remote available on local repository  
-`$ git remote -v`: show the URLs that git has stored for each remote
-`$ git remote add bitbucket https://orozimbro@bitbucket.org/orozimbro/git-pro-book.git`: add new remote
+`$ git remote -v`: show the URLs that git has stored for each remote  
+`$ git remote add bitbucket https://orozimbro@bitbucket.org/orozimbro/git-pro-book.git`: add new remote  
+`$ git remote show <remote>`: show details about the remote repository  
+`$ git remote rename bitbucket bb`: rename the remote 'bitbuclet' do 'bb' (type `git remote`)
+`$ git remote rm <remote>`: remove a remote repository
+
+## git fetch
+`$ git fetch <remote>`: pull changes from repository
+
+
+
+
+
