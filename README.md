@@ -88,5 +88,12 @@ committer: who last applied the work
 ## git reset
 `$ git reset HEAD <file>`: remove a file from staging area  
 
-## git checkout
+## git checkout (keep in mind, it is a dangerous command)
 `$ git checkout -- <file>`: revert file changes in working directory
+
+# --------------------- Working with remotes -------------------------
+
+## git remote
+`$ git remote`: list de name of each remote available on local repository  
+`$ git remote -v`: show the URLs that git has stored for each remote
+`$ git remote add bitbucket https://orozimbro@bitbucket.org/orozimbro/git-pro-book.git`: add new remote
