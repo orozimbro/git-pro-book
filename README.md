@@ -27,4 +27,9 @@ $ git difftool --tool-help
 $ git difftool --tool=winmerge  
 ```
 
-outro teste':
+## git commit
+`$ git commit`: will open your default editor (git config --global core.editor) to you add your commit message  
+`$ git commit -m <your message>`: commit of all files on stage area  
+`$ git commit -a -m <your message>`: stage and commit all MODIFIED AND TRACKED files  
+
+
