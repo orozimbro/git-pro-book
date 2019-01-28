@@ -20,10 +20,10 @@ $ git config --global user.email "orozimbro@gmail.com"
 `$ git status -s`  
 
 ## git diff
-`
-$ git diff  
-$ git difftool  
+```
+$ git diff
+$ git difftool
 $ git difftool --tool-help  
 $ git difftool --tool=winmerge  
-`
+```
 
