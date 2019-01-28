@@ -8,21 +8,22 @@ The 'git config' can be stored in three diferent places:
 Each level overrides values in the previos  level;
 ### Setting your identity
 `
-$ git config --global user.name "Mauricio Orozimbro de Souza"
+$ git config --global user.name "Mauricio Orozimbro de Souza"  
 $ git config --global user.email "orozimbro@gmail.com"
 `
 ### Checking your settings
-$ git config --list
+`$ git config --list`
 
 ## git status
-$ git status
+`$ git status`  
 ### Git short status
-$ git status -s
+`$ git status -s`  
 
 ## git diff
-$ git diff
-$ git difftool
-$ git difftool --tool-help
-$ git difftool --tool=winmerge
-
+`
+$ git diff  
+$ git difftool  
+$ git difftool --tool-help  
+$ git difftool --tool=winmerge  
+`
 
