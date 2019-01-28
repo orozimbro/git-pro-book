@@ -96,7 +96,8 @@ There are two main types of tags: lightweight and annotated
 `$ git tag`  
 `$ git tag -l 'v1.8.5*'`  
 `$ git tag -a v1.0 -m 'my version 1.0'`: '-a' is an annotated tag, -m is the message to tag
-
+`$ git tag v1.1-lw`: this is an tag of type lightweight
+`$ git tag v0.5 e037d8e49`: tag an old commit, useful if you forgot to tag an old commit
 
 # --------------------- Working with remotes -------------------------
 
